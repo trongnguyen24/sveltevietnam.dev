@@ -50,3 +50,5 @@ declare global {
     // interface Platform {}
   }
 }
+
+declare module '@unocss/transformer-directives';

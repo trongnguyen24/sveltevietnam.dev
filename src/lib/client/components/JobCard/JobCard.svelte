@@ -42,7 +42,7 @@
   .job-card {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: theme('spacing.4');
+    column-gap: 16px;
     align-items: center;
   }
 
@@ -55,16 +55,16 @@
     display: grid;
     place-items: center;
 
-    padding: theme('spacing.1') theme('spacing.2') theme('spacing[0.5]');
+    padding: 4px 8px 2px;
 
-    font-size: theme('fontSize.2xs');
+    font-size: 10px;
     text-transform: capitalize;
 
     background-color: theme('colors.bg.200');
-    border-radius: theme('borderRadius.DEFAULT');
+    border-radius: theme('borderRadius.default');
 
-    @screen md {
-      font-size: theme('fontSize.xs');
-    }
+    /* @screen md {
+      font-size: 12px;
+    } */
   }
 </style>

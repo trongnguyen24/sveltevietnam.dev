@@ -6,7 +6,9 @@ const postcss = require('postcss');
 module.exports = {
   plugins: {
     'postcss-import': {},
-    'tailwindcss/nesting': 'postcss-nesting',
+    '@unocss/postcss': {},
+    'postcss-nesting': {},
+    // 'tailwindcss/nesting': 'postcss-nesting',
     /** @type {import('postcss-mixins').Options} */
     'postcss-mixins': {
       mixinsDir: path.resolve(__dirname, './src/lib/client/styles/mixins'),
@@ -95,7 +97,7 @@ module.exports = {
         },
       },
     },
-    tailwindcss: {},
+    // tailwindcss: {},
     autoprefixer: {},
     ...(process.env.NODE_ENV !== 'development' && { cssnano: {} }),
   },

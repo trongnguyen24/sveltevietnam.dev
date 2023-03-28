@@ -209,7 +209,7 @@
     display: grid;
     grid-template-areas: 'logo theme mobile-open';
     grid-template-columns: 1fr auto auto;
-    column-gap: theme('spacing.4');
+    column-gap: 16px;
     align-items: center;
 
     height: theme('spacing.header');
@@ -232,15 +232,15 @@
     display: contents;
 
     & > ul {
-      @mixin space x, theme('spacing.2');
+      @mixin space x, 8px;
 
       display: flex;
       grid-area: languages;
       align-items: center;
 
-      @media (max-width: theme('screens.md')) {
-        font-size: theme('fontSize.xl');
-      }
+      /* @screen lt-md {
+        font-size: 20px;
+      } */
     }
   }
 
@@ -253,22 +253,22 @@
       align-items: center;
       justify-content: center;
 
-      @media (max-width: theme('screens.md')) {
-        @mixin space y, theme('spacing.9');
+      /* @screen lt-md {
+        @mixin space y, 36px;
 
         flex-direction: column;
-        margin-top: calc(-1 * theme('spacing.6'));
-        font-size: theme('fontSize.2xl');
-      }
+        margin-top: calc(-1 * 24px);
+        font-size: 24px;
+      } */
 
-      @screen md {
-        @mixin space x, theme('spacing.4');
+      /* @screen md {
+        @mixin space x, 16px;
 
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+      } */
     }
   }
 
@@ -285,34 +285,34 @@
     grid-template-rows: auto 1fr;
     align-items: center;
 
-    padding: theme('spacing.4') theme('spacing.6');
+    padding: 16px 24px;
 
     background: theme('colors.bg.200');
 
-    @media (max-width: theme('screens.md')) {
+    /* @screen lt-md {
       &[data-open]:not([data-open='false']) {
         display: grid;
       }
-    }
+    } */
 
-    @screen md {
+    /* @screen md {
       display: contents;
-    }
+    } */
   }
 
   .mobile-close {
     grid-area: mobile-close;
 
-    @screen md {
+    /* @screen md {
       display: none;
-    }
+    } */
   }
 
   .mobile-open {
     grid-area: mobile-open;
 
-    @screen md {
+    /* @screen md {
       display: none;
-    }
+    } */
   }
 </style>

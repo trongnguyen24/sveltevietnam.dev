@@ -36,13 +36,13 @@ const sveltevietnam = plugin(
     addComponents({
       '.c-container': {
         'max-width': '1200px',
-        'padding-left': theme('spacing.6'),
-        'padding-right': theme('spacing.6'),
+        'padding-left': 24px,
+        'padding-right': 24px,
         'margin-left': 'auto',
         'margin-right': 'auto',
         '@screen md': {
-          'padding-left': theme('spacing.8'),
-          'padding-right': theme('spacing.8'),
+          'padding-left': 32px,
+          'padding-right': 32px,
         },
       },
       '.c-link': {
@@ -103,12 +103,12 @@ const sveltevietnam = plugin(
       },
       '.c-btn': {
         display: 'grid',
-        'column-gap': theme('spacing.2'),
-        padding: `0 ${theme('spacing.3')}`,
+        'column-gap': 8px,
+        padding: `0 ${12px}`,
         'min-height': '40px',
         'justify-content': 'center',
         'align-items': 'center',
-        'border-radius': theme('borderRadius.DEFAULT'),
+        'border-radius': theme('borderRadius.default'),
         '&:where(:has(:is(img, svg)))': {
           'grid-template-columns': 'auto auto',
         },
@@ -124,8 +124,8 @@ const sveltevietnam = plugin(
         },
         '&:where(.c-btn--text)': {
           position: 'relative',
-          padding: `0 0 ${theme('spacing.1')}`,
-          'font-weight': theme('fontWeight.medium'),
+          padding: `0 0 ${4px}`,
+          'font-weight': '500',
           '&::after': {
             content: '""',
             display: 'block',
@@ -151,7 +151,7 @@ const sveltevietnam = plugin(
         'min-width': '120px',
         'min-height': '120px',
         'background-color': theme('colors.bg.300'),
-        'border-radius': theme('borderRadius.DEFAULT'),
+        'border-radius': theme('borderRadius.default'),
       },
 
       '.c-avatar': {
@@ -166,13 +166,13 @@ const sveltevietnam = plugin(
         'min-height': '40px',
         width: 'auto',
         'background-color': theme('colors.bg.300'),
-        'border-radius': theme('borderRadius.DEFAULT'),
+        'border-radius': theme('borderRadius.default'),
       },
 
       '.c-input': {
-        padding: `0 ${theme('spacing.3')}`,
+        padding: `0 ${12px}`,
         height: '40px',
-        'border-radius': theme('borderRadius.DEFAULT'),
+        'border-radius': theme('borderRadius.default'),
         'min-width': 0,
         width: '100%',
         'background-color': 'transparent',
@@ -189,10 +189,10 @@ const sveltevietnam = plugin(
       '.c-page': {
         '@apply c-container': {},
         display: 'grid',
-        'row-gap': theme('spacing.10'),
-        'padding-bottom': theme('spacing.20'),
+        'row-gap': 40px,
+        'padding-bottom': 80px,
         '@screen md': {
-          'row-gap': theme('spacing.20'),
+          'row-gap': 80px,
         },
       },
       '.c-page\\@header': {
@@ -222,14 +222,14 @@ const sveltevietnam = plugin(
         display: 'grid',
         'grid-template-columns': '1fr',
         'grid-auto-rows': 'min-content',
-        gap: theme('spacing.6'),
+        gap: 24px,
         'justify-content': 'center',
         'justify-items': 'center',
-        padding: theme('spacing.6'),
+        padding: 24px,
         'background-color': theme('colors.bg.200'),
-        'border-radius': theme('borderRadius.DEFAULT'),
+        'border-radius': theme('borderRadius.default'),
         '@screen md': {
-          padding: theme('spacing.10'),
+          padding: 40px,
         },
       },
       ':where(.c-action-card > p)': {

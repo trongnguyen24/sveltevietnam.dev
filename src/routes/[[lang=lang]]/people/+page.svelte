@@ -59,11 +59,11 @@
   .actions {
     display: grid;
     grid-template-columns: 1fr;
-    gap: theme('spacing.10');
+    gap: 40px;
 
-    @screen md {
+    /* @screen md {
       grid-template-columns: 1fr auto;
-    }
+    } */
   }
 
   li {
@@ -74,7 +74,7 @@
       'down down';
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(3, auto);
-    column-gap: theme('spacing.4');
+    column-gap: 16px;
 
     &::before,
     &::after {
@@ -82,7 +82,7 @@
 
       display: block;
 
-      height: theme('spacing.6');
+      height: 24px;
 
       border-color: theme('colors.bg.300');
       border-style: solid;
@@ -129,13 +129,13 @@
 
     &:nth-child(odd) {
       &::before {
-        margin: 0 theme('spacing.3');
+        margin: 0 12px;
         border-top-width: 2px;
         border-left-width: 2px;
       }
 
       &::after {
-        margin: 0 theme('spacing.3');
+        margin: 0 12px;
         border-bottom-width: 2px;
         border-left-width: 2px;
       }
@@ -143,12 +143,12 @@
 
     &:nth-child(even) {
       &::before {
-        margin-right: theme('spacing.3');
+        margin-right: 12px;
         border-right-width: 2px;
       }
 
       &::after {
-        margin-right: theme('spacing.3');
+        margin-right: 12px;
         border-right-width: 2px;
       }
 

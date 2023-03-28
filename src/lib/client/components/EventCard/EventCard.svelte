@@ -122,8 +122,8 @@
 
 <style lang="postcss">
   .event-card {
-    padding: theme('spacing.10');
+    padding: 40px;
     background: theme('colors.bg.200');
-    border-radius: theme('borderRadius.DEFAULT');
+    border-radius: theme('borderRadius.default');
   }
 </style>

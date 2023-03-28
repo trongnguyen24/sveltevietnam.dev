@@ -50,11 +50,11 @@
 <style lang="postcss">
   form {
     display: grid;
-    gap: theme('spacing.2');
+    gap: 8px;
 
-    @screen md {
+    /* @screen md {
       grid-template-columns: 1fr 1fr auto;
-    }
+    } */
   }
 
   .error {
@@ -62,9 +62,9 @@
     bottom: 100%;
     left: 0;
 
-    padding-bottom: theme('spacing[0.5]');
+    padding-bottom: 2px;
 
-    font-size: theme('fontSize.2xs');
+    font-size: 10px;
     font-style: italic;
     color: theme('colors.status.error');
   }

@@ -49,17 +49,17 @@
       'icon description'
       'x action'
       'ctas ctas';
-    row-gap: theme('spacing.4');
-    column-gap: theme('spacing.4');
+    row-gap: 16px;
+    column-gap: 16px;
 
-    padding: theme('spacing.6');
+    padding: 24px;
 
     background-color: theme('colors.bg.200');
-    border-radius: theme('borderRadius.DEFAULT');
+    border-radius: theme('borderRadius.default');
 
-    @screen md {
-      padding: theme('spacing.10');
-    }
+    /* @screen md {
+      padding: 40px;
+    } */
 
     & .notice-icon {
       grid-area: icon;
@@ -77,19 +77,19 @@
       display: flex;
       grid-area: ctas;
 
-      @media (max-width: theme('screens.md')) {
-        @mixin space y, theme('spacing.4');
+      /* @screen lt-md {
+        @mixin space y, 16px;
 
         flex-direction: column;
-        font-size: theme('fontSize.sm');
-      }
+        font-size: 14px;
+      } */
 
-      @screen md {
-        @mixin space x, theme('spacing.8');
+      /* @screen md {
+        @mixin space x, 32px;
 
         align-items: center;
         justify-content: center;
-      }
+      } */
     }
   }
 
@@ -99,8 +99,8 @@
       'line quote'
       'line caption';
     grid-template-columns: auto 1fr;
-    row-gap: theme('spacing.6');
-    column-gap: theme('spacing.4');
+    row-gap: 24px;
+    column-gap: 16px;
 
     &::before {
       content: '';
@@ -118,14 +118,14 @@
       grid-area: quote;
 
       & > p::first-letter {
-        font-size: theme('fontSize.4xl');
-        font-weight: theme('fontWeight.bold');
+        font-size: 36px;
+        font-weight: bold;
       }
     }
 
     & figcaption {
       grid-area: caption;
-      padding-bottom: theme('spacing.2');
+      padding-bottom: 8px;
       font-style: italic;
     }
   }

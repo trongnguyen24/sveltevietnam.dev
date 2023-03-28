@@ -40,7 +40,7 @@
   .job-card {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: theme('spacing.4');
+    column-gap: 16px;
     align-items: center;
   }
 </style>

@@ -96,32 +96,32 @@
       'socials'
       'links'
       'info';
-    row-gap: theme('spacing.5');
+    row-gap: 20px;
     align-items: center;
     justify-content: center;
     justify-items: center;
 
-    @screen md {
+    /* @screen md {
       grid-template-areas: 'links info socials';
       grid-template-columns: 1fr auto 1fr;
       row-gap: 0;
-    }
+    } */
   }
 
   .socials {
     grid-area: socials;
 
-    @screen md {
+    /* @screen md {
       justify-self: end;
-    }
+    } */
   }
 
   .links {
     grid-area: links;
 
-    @screen md {
+    /* @screen md {
       justify-self: start;
-    }
+    } */
   }
 
   .info {

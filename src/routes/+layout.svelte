@@ -1,7 +1,9 @@
 <script lang="ts">
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   import { partytownSnippet } from '@builder.io/partytown/integration';
+  import '@unocss/reset/tailwind.css';
   import { onMount } from 'svelte';
+  import 'uno.css';
 
   import { dev, browser } from '$app/environment';
   import { page } from '$app/stores';
